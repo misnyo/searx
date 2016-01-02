@@ -59,10 +59,6 @@ def response(resp):
         leech = result.xpath('.//dd/span[@class="d"]/text()')[0]
         size_data = result.xpath('.//dd/span[@class="s"]/text()')
 
-        torrent_page = http_get(href)
-        tp_dom = html.fromstring(torrent_page.text)
-        files = len(tp_dom.xpath('//div[@class="files"]//*//ul//li[not(@class="t")]'))
-
         # convert seed to int if possible
         if seed.isdigit():
             seed = int(seed)
@@ -99,7 +95,6 @@ def response(resp):
                         'seed': seed,
                         'leech': leech,
                         'filesize': filesize,
-                        'files': files,
                         'template': 'torrent.html'})
 
     # return results sorted by seeder

@@ -257,7 +257,7 @@ engines:
   - name : torrentz
     engine : torrentz
     shortcut : tz
-    timeout : 10.0
+    timeout : 4.0
 
 # maybe in a fun category
 #  - name : uncyclopedia
