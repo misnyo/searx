@@ -254,6 +254,11 @@ engines:
     engine : twitter
     shortcut : tw
 
+  - name : torrentz
+    engine : torrentz
+    shortcut : tz
+    timeout : 10.0
+
 # maybe in a fun category
 #  - name : uncyclopedia
 #    engine : mediawiki
